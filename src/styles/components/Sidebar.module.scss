@@ -1,0 +1,40 @@
+.container {
+
+  width: 90px;
+  height: 100vh;
+
+  background: var(--sidebar);
+  
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  padding: 2rem;
+
+  main svg {
+
+    margin-bottom: 1rem;
+
+  }
+
+  footer a {
+    transition: color 0.2s ease;
+    &:hover{
+      color: var(--blue);
+    }
+  }
+
+}
+
+.isActive {
+
+  color: var(--blue);
+
+}

@@ -1,0 +1,77 @@
+html {
+
+  --white: #FFF;
+  --gray-line: #DCDDE0;
+  --background: #f2f3f5;
+
+  --red: #E83F5B;
+  --green: #4CD62B;
+  --blue: #5965E0;
+  --blue-light: #2AA9E0;
+  --blue-dark: #4953B8;
+
+  --title: #2E384D;
+  --text: #666666;
+  --text-highlight: #B2B9FF;
+
+  --divider: #f0f1f3;
+  --sidebar: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+
+}
+
+html.dark-mode {
+
+  --white: #1B1828;
+  --gray-line: #23232F;
+  --background: #100D1B;
+
+  --red: #E83F5B;
+  --green: #4CD62B;
+  --blue: #5965E0;
+  --blue-light: #2AA9E0;
+  --blue-dark: #4953B8;
+
+  --title: #F4f4f4;
+  --text: #FFF;
+  --text-highlight: #B2B9FF;
+
+  --divider: #100D1B;
+  --sidebar: linear-gradient(180deg, #1B1828 0%, #100D1B 100%);
+
+}
+
+@media(max-width: 1080px){
+  html{
+    font-size: 93.75%;
+  }
+}
+
+@media(max-width: 720px){
+  html{
+      font-size: 87.5%;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+body, input, select, textarea, button {
+  font: 400 1rem 'Inter', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
