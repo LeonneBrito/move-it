@@ -58,7 +58,7 @@ export default function Home(props: HomeProps): JSX.Element {
     >
       <div className={styles.container}>
         <Head>
-          <title>Início | move.it</title>
+          <title>{session.user.name} | move.it</title>
         </Head>
         <ExperienceBar />
 
