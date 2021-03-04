@@ -12,7 +12,7 @@ import { Countdown } from "../components/Countdown"
 import { Profile } from "../components/Profile"
 
 import { signIn, useSession } from 'next-auth/client'
-import { FiGithub } from 'react-icons/fi'
+import { FiLogIn } from 'react-icons/fi'
 import { Sidebar } from '../components/Sidebar'
 
 
@@ -36,11 +36,11 @@ export default function Home(props: HomeProps): JSX.Element {
           <img src="Logo.svg" alt="Move it" />
           <strong>Bem vindo</strong>
           <div className={styles.auth}>
-            <FiGithub size={40} color="#B2B9FF"/>
-            <span>Faça login com seu Github para começar</span>
+            <FiLogIn size={32} color="#B2B9FF"/>
+            <span>Faça sua autenticação para começar.</span>
           </div>
           <button 
-            onClick={() => signIn()}
+            onClick={() => signIn('auth0')}
             className={styles.signButton}
           >
             Sign in
