@@ -16,7 +16,7 @@ export function Sidebar() {
         <ThemeChanger />
       </main>
       <footer>
-       <a onClick={() => signOut()}><FiLogOut size={32} /></a>
+       <a onClick={() => signOut({ redirect: false })}><FiLogOut size={32} /></a>
       </footer>
     </div>
   );
